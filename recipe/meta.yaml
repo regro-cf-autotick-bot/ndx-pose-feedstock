@@ -1,5 +1,5 @@
 {% set name = "ndx-pose" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ndx_pose-{{ version }}.tar.gz
-  sha256: 69a9a139363ccf8406f36752146d345914330e69921b9734db2425fc9808a0a1
+  sha256: 4b356c730bda0d273b49e44576343162be26f42c292662d7358efebd252324cb
 
 build:
   noarch: python
