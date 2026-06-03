@@ -21,7 +21,12 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - pynwb >=2.6.0
+    # ndx-pose sets a min version of pynwb = 2.6.0 but the conda feedstock for that
+    # version of pynwb did not set a max version of hdmf,
+    # so to prevent an older version of pynwb being installed to accommodate a newer
+    # and incompatible version of hdmf, raise the minimum version of pynwb to the 
+    # one that sets a max version of hdmf
+    - pynwb >=3.1.0
     - hdmf >=3.13.0
 
 test:
